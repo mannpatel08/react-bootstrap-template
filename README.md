@@ -82,6 +82,10 @@ src/
 
 ---
 
+### output screenshot
+
+<img width="1890" height="3845" alt="localhost_5176_" src="https://github.com/user-attachments/assets/8aea4f5a-482c-4053-9bf4-66a0151ade3b" />
+
 ## 📦 Installation & Setup
 
 
@@ -100,6 +104,4 @@ npm run build
 
 
 
-### output screenshot
 
-<img width="1890" height="3845" alt="localhost_5176_" src="https://github.com/user-attachments/assets/8aea4f5a-482c-4053-9bf4-66a0151ade3b" />
