@@ -1,0 +1,388 @@
+:root {
+  --bg-dark: #050b1b;
+  --bg-dark-2: #071025;
+  --accent-1: #f5c443;
+  --accent-2: #8a4dff;
+  --accent-3: #ff5ca8;
+  --text-muted: #9ca7c4;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #111b3a 0, #020612 45%, #000 100%);
+  color: #ffffff;
+}
+
+.app-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050b1b, #020611);
+}
+
+/* GENERIC SECTION */
+
+.section-wrapper {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-dark {
+  background: radial-gradient(circle at top left, #111b3a 0, #020612 50%);
+}
+
+.hero-bg {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+/* STATS SECTION WITH WAVE LIKE TEMPLATE */
+.stats-bg {
+  background:
+    url("/src/assets/state-bar.png") center bottom / cover no-repeat,
+    linear-gradient(180deg, #0a2f66 0%, #05132f 100%);
+}
+
+
+/* Align numbers nicely in the strip */
+.stats-bar {
+  min-height: 180px;               /* similar height to template */
+  padding: 40px 0;                 /* only a bit of vertical padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+
+/* Make stats section slimmer */
+#stats.section-wrapper {
+  padding: 0;              /* remove big default padding */
+}
+
+.stat-value {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stats-bar .small {
+  color: #c0d6ff;
+}
+
+
+
+/* NAVBAR */
+
+.tech-navbar {
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 11, 27, 0.95),
+    rgba(2, 6, 18, 0.9)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.nav-link-custom {
+  color: #c3cbe9 !important;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.nav-link-custom:hover {
+  color: #ffffff !important;
+}
+
+.logo-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8a4dff, #2736ff);
+}
+
+/* BUTTONS */
+
+.btn-gradient {
+  background-image: linear-gradient(90deg, #8a4dff, #ff5ca8);
+  border: none;
+  color: #fff;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* HERO */
+
+.hero-section {
+  min-height: 90vh;
+}
+
+.small-tag {
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(8, 24, 63, 0.9);
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+.hero-image-wrapper {
+  position: relative;
+}
+
+.hero-image {
+  border-radius: 28px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, #f5c443, #ff5ca8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-muted-2 {
+  color: var(--text-muted);
+}
+
+/* ABOUT */
+
+.about-row {
+  min-height: 70vh;
+}
+
+.about-images {
+  position: relative;
+}
+
+.about-img-main {
+  border-radius: 34px;
+  overflow: hidden;
+}
+
+.about-img-small {
+  position: absolute;
+  bottom: -30px;
+  right: -10px;
+  width: 55%;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.about-clients-pill {
+  position: absolute;
+  bottom: -55px;
+  left: 15px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(5, 11, 27, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar-stack {
+  width: 40px;
+  height: 24px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8a4dff, #ff5ca8);
+}
+
+/* SECTION TITLES */
+
+.section-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.section-title {
+  font-size: 2.1rem;
+}
+
+.section-text {
+  color: var(--text-muted);
+  max-width: 560px;
+}
+
+.feature-title {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* STATS BAR */
+
+.stats-bar {
+  padding: 30px 0;
+}
+
+.stat-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* WHY CHOOSE */
+
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(13, 23, 55, 0.9);
+}
+
+.progress-bar-gradient {
+  border-radius: 999px;
+  background-image: linear-gradient(90deg, #ff5ca8, #8a4dff);
+}
+
+.progress-bar-gradient-2 {
+  border-radius: 999px;
+  background-image: linear-gradient(90deg, #8a4dff, #39a0ff);
+}
+
+/* TESTIMONIALS */
+
+.testimonial-card {
+  background: radial-gradient(circle at top left, #111b3a 0, #050b1b 45%);
+  border-radius: 24px;
+  padding: 32px 28px;
+  position: relative;
+  height: 100%;
+}
+
+.stars {
+  color: #f5c443;
+  font-size: 0.9rem;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8a4dff, #ff5ca8);
+}
+
+.quote-mark {
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* FOOTER */
+
+.footer-content {
+  font-size: 0.9rem;
+}
+
+.footer-card {
+  border-radius: 28px;
+  background: radial-gradient(circle at top left, #111b3a 0, #050b1b 45%);
+  padding: 30px 26px;
+}
+
+.footer-links li {
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #ffffff;
+}
+
+.social-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-circle i {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .section-wrapper {
+    padding: 80px 0;
+  }
+
+  .hero-bg {
+    padding-top: 120px;
+  }
+}
+/* HERO FULL BACKGROUND IMAGE */
+.hero-bg-image {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  padding: 150px 0 120px;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.hero-bg-image .row {
+  position: relative;
+  z-index: 2;
+}
+/* REMOVE PADDING FOR HERO SECTION */
+#home.section-wrapper {
+  padding: 0 !important;
+}
+
+/* REMOVE CONTAINER PADDING ONLY FOR HERO */
+#home .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* HERO FULL IMAGE EDGE TO EDGE */
+.hero-bg-image {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; /* FIX LEFT GAP */
+  background-repeat: no-repeat;
+  padding: 0; /* remove internal padding */
+}
